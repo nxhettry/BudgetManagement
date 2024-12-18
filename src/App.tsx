@@ -1,8 +1,9 @@
 import "./App.css";
-import Aboutpage from "./routes/Aboutpage";
-import Dashboard from "./routes/Dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/layout/Sidebar";
+import Dashboard from "./routes/dashboard/dashboard";
+import Reportpage from "./routes/reports/reports";
+import Entrypage from "./routes/entry/createentry";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/about" element={<Aboutpage />} />
+            <Route path="/entry" element={<Entrypage />} />
+            <Route path="/reports" element={<Reportpage />} />
           </Routes>
         </BrowserRouter>
       </div>
