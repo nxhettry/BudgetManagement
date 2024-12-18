@@ -5,7 +5,7 @@ import Dashboard from "./routes/dashboard/dashboard";
 import Reportpage from "./routes/reports/reports";
 import Entrypage from "./routes/entry/createentry";
 
-function App() {
+export default function App() {
   return (
     <div className="max-h-screen font-ubuntu w-screen font-bold flex">
       <Sidebar />
@@ -21,5 +21,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

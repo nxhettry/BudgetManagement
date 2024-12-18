@@ -1,8 +1,5 @@
-
 const CreateEntry = () => {
-  return (
-    <div>CreateEntry</div>
-  )
-}
+  return <div>CreateEntry</div>;
+};
 
-export default CreateEntry
+export default CreateEntry;
